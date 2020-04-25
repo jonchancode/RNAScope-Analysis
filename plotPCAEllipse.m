@@ -1,0 +1,13 @@
+function plotPCAEllipse(ax, center, principal_components, color)
+
+t = linspace(0, 2 * pi);
+
+ellipse_boundary_pts = principal_components * [cos(t(:))'; sin(t(:))'];
+
+plot(...
+    ax, ...
+    ellipse_boundary_pts(1, :) + center(1), ...
+    ellipse_boundary_pts(2, :) + center(2), ...
+    'color', color);
+
+end
