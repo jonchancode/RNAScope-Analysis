@@ -10,9 +10,14 @@ This code will:
 2. Then it will count the number of Gad2 puncta that reside in this boundary created
 3. It will then display this
 
-Instructions:
+## Pre-requisites
+- MATLAB (2009b or higher)
+    - Statistics and Machine Learning Toolbox
+- VLFeat Computer Vision library (open source toolbox for MATLAB)
+
+## Instructions:
 1. Make sure you have downloaded and installed the vlfeat computer vision toolbox for MATLAB. Instructions can be found here: https://www.vlfeat.org/install-matlab.html
-2. Download the entire master branch on github
+2. Download the master branch of the RNAScope-Analysis repository from github
 3. Make the folder you downloaded your current folder in MATLAB
 4. Open the script called RUN_single_image.m
 5. Change the variable 'filename' on line 19 to the name of any of the examples images provided. Exclude the 'opn4.tif' and 'gad2.tif' part of the filename when designating this variable. That will be added later in the subsequent lines.

@@ -4,14 +4,13 @@
 % 3. Display results
 
 % Before beginning, make sure that you change the variable 'filename' below
+
 % Also, install vlfeat (https://www.vlfeat.org/install-matlab.html)
+assert(initializeVlfeat(), 'Failed to initialize VLFeat');
 
 % Variable "Gad2Puncta_inpolygon" will list coordinates of Gad2 puncta
 % inside Opn4 convex hull
 clear all; close all;
-
-% Initialize vlfeat
-run('C:/Users/takie/OneDrive/Desktop/MATLAB/vlfeat-0.9.21/toolbox/vl_setup');
 
 %% This part of the code involves making a convex hull around Opn4 signal
 % In order to estimate the boundary of Opn4+ cells
