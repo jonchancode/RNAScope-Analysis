@@ -6,10 +6,7 @@
 % Before beginning, make sure that you change the variable 'filename' below
 
 % Also, install vlfeat (https://www.vlfeat.org/install-matlab.html)
-if ~checkVlfeatIsInstalled()
-    fprintf(2, "Unable to find vlfeat on the local machine. Did you run VLFeat's vl_setup? Please follow the instructions on https://www.vlfeat.org/install-matlab.html to install.\n")
-    return
-end
+assert(initializeVlfeat(), 'Failed to initialize VLFeat');
 
 % Variable "Gad2Puncta_inpolygon" will list coordinates of Gad2 puncta
 % inside Opn4 convex hull
