@@ -20,7 +20,7 @@ This code will:
 2. Download the master branch of the RNAScope-Analysis repository from github
 3. Make the folder you downloaded your current folder in MATLAB
 4. Open the script called RUN_single_image.m
-5. Change the variable 'filename' on line 19 to the name of any of the examples images provided. Exclude the 'opn4.tif' and 'gad2.tif' part of the filename when designating this variable. That will be added later in the subsequent lines.
+5. Change the variable 'filename' on line 18 to the name of any of the examples images provided. Exclude the 'opn4.tif' and 'gad2.tif' part of the filename when designating this variable. That will be added later in the subsequent lines.
 Example images are contained in the "example_images" folder you downloaded.
 6. Run the script
 
